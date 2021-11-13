@@ -25,7 +25,7 @@ const register = async (req, res) => {
     if (createUser) {
       return res.json({
         id: createUser._id,
-        username:username,
+        username:createUser.username,
         result: true,
         message: "User registered successfully",
       });
